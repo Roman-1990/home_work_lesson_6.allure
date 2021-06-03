@@ -2,7 +2,7 @@ import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class AnnotatedStepsTest {
+public class AnnotatedStepsTest extends BaseTest {
 
     private WebSteps steps = new WebSteps();
 

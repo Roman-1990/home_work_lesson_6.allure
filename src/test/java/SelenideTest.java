@@ -2,7 +2,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 
-public class SelenideTest {
+public class SelenideTest extends BaseTest {
 
     private WebPage page = new WebPage();
 

@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
-public class LambdaStepsTest {
+public class LambdaStepsTest extends BaseTest{
 
     private static final int ISSUE_NUMBER = 1467;
     private WebPage page = new WebPage();
