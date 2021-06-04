@@ -23,9 +23,7 @@ public class WebSteps {
 
     @Step("Search the repository {repository}")
     public void searchRepository() {
-        searchField.click();
-        searchField.setValue(REPOSITORY)
-                .submit();
+        searchField.setValue(REPOSITORY).submit();
     }
 
     @Step("Open the repository {repository}")
@@ -40,7 +38,7 @@ public class WebSteps {
 
     @Step("Check the Issue number {number} is displayed")
     public void searchIssueByNumber(int number) {
-        $(withText("#" + number)).should(Condition.exist);
+        $(withText("#" + number)).should(Condition.visible);
     }
 
     @Attachment(value = "Screenshot", type = "image/png")
