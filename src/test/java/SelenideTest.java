@@ -23,7 +23,6 @@ public class SelenideTest extends BaseTest {
     public void testSelenideNoIssue() {
         //создание лога
         SelenideLogger.addListener("allure", new AllureSelenide().screenshots(false));
-
         
         page.openMainPage ();
         page.searchRepository ();
