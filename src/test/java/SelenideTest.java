@@ -17,17 +17,4 @@ public class SelenideTest extends BaseTest {
         page.searchIssueByNumber(1467);
         page.makeScreenshot();
     }
-    
-    //тест с намеренной ошибкой
-    @Тест
-    public void testSelenideNoIssue() {
-        //создание лога
-        SelenideLogger.addListener("allure", new AllureSelenide().screenshots(false));
-        
-        page.openMainPage ();
-        page.searchRepository ();
-        page.openTheRepository ();      
-        page.openIssueTab;
-        page.searchIssueByNumber (9999);
-    }
 }
