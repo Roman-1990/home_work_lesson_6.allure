@@ -6,6 +6,7 @@ public class SelenideTest extends BaseTest {
 
     private WebPage page = new WebPage();
 
+    
     @Test
     public void testIssueSearchWithLambdaSteps() {
         SelenideLogger.addListener("allure", new AllureSelenide());
